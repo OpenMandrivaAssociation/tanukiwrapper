@@ -35,7 +35,7 @@
 
 Name:           tanukiwrapper
 Version:        3.2.3
-Release:        %mkrel 0.0.2
+Release:        %mkrel 0.0.3
 Summary:        Java Service Wrapper
 Epoch:          0
 License:        BSD
@@ -60,8 +60,6 @@ Obsoletes:      %{name}-demo < 0:3.1.2-2jpp
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 %if %{gcj_support}
 BuildRequires:   java-gcj-compat-devel
-Requires(post):  java-gcj-compat
-Requires(postun): java-gcj-compat
 %else
 BuildRequires:   java-devel
 BuildRequires:   java-javadoc
