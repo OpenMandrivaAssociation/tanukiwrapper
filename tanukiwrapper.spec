@@ -35,7 +35,7 @@
 
 Name:           tanukiwrapper
 Version:        3.2.3
-Release:        %mkrel 0.0.3
+Release:        %mkrel 0.0.4
 Summary:        Java Service Wrapper
 Epoch:          0
 License:        BSD
@@ -49,7 +49,7 @@ Patch4:         %{name}-Makefile-s390-s390x-ppc.patch
 # The following patch is only needed for GCJ.
 Patch5:         %{name}-nosun-jvm-64.patch
 Group:          Development/Java
-BuildRequires:  jpackage-utils >= 0:1.6
+BuildRequires:  java-rpmbuild >= 0:1.6
 BuildRequires:  ant >= 0:1.6.1
 BuildRequires:  ant-nodeps >= 0:1.6.1
 BuildRequires:  ant-junit
