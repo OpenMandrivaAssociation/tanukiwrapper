@@ -57,6 +57,7 @@ BuildRequires:  xerces-j2
 BuildRequires:  xml-commons-apis
 Requires:       jpackage-utils >= 0:1.6
 Obsoletes:      %{name}-demo < 0:3.1.2-2jpp
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 %if %{gcj_support}
 BuildRequires:   java-gcj-compat-devel
 %else
